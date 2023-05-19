@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@100;200;300;400;500&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(30, 29, 29);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#image img{
+    width: 32rem;
+}
+
+
+#calculadora{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: rgb(29, 27, 27);
+    border-radius: 8px;
+
+}
+
+
+
+
+#borda{
+    position: relative;
+    
+   
+}
+
+#borda span:first-child{
+position: absolute;
+
+top:0;
+left: 0;
+width: 100%;
+height: 1px;
+background: linear-gradient(90deg, transparent, #03e9f4);
+animation: animate1 1s infinite;
+animation-delay: .25s;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+#borda span:nth-child(2){
+    position: absolute;
+    
+    top:0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate2 1s infinite;
+    animation-delay: .25s;
+    }
+    
+    @keyframes animate2{
+        0%{
+            top: -100%;
+        }
+        100%{
+            top: 100%;
+        }
+    }
+
+
+#form{
+    display: flex;
+    flex-direction:  column;
+    gap: 2rem;
+}
+
+#title{
+    font-size: 2.25rem;
+    position: relative;
+
+}
+
+.input-box label{
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    font-weight: 500;
+
+
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4e4e52;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top:  3px;
+
+}
+
+.input-field span,
+.input-field i {
+    color: #ffffff;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+
+}
+
+.input-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #ffffff;
+    padding: 0 0.5rem;
+    
+}
+
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-inner-spin-button{
+   
+    appearance: none;
+}
+
+.input-field input:focus{
+    outline: none;
+}
+
+#calculate{
+    
+    position: relative;
+    display:  inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: transparent;
+    color: #03e9f4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: .5s;
+    overflow: hidden;
+    border-color: transparent;
+}
+#calculate:hover{
+    background-color: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+
+#result{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+
+}
+
+#bmi span:last-child{
+    font-size: 0.875rem;
+    color: #cbd5e1;
+
+}
+
+#description{
+    width: 15.5rem;
+}
+
+#infos{
+    text-align: center;
+    border-top: 1px solid #ffffff34;
+    padding-top: 1.5rem;
+
+}
+
+#infos a {
+    color: #16a34a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition:  color 0.5s;
+
+}
+
+#infos a:hover{
+    color: #cbd5e1;
+}
+
+.hidden{
+    display: none;
+}
+
+.normal{
+    color: #16a34a;
+}
+.attention{
+    color: red;
+}
+@media screen and (max-width: 1024px) {
+    #image {
+        display: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #calculator{
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        justify-content: center;
+    }
+}
