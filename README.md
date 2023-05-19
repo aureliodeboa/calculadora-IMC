@@ -17,7 +17,7 @@ Este é um projeto de Front-end para uma calculadora de Índice de Massa Corpora
 - CSS3: Folhas de estilo para a aparência visual e layout.
 - JavaScript: Linguagem de programação para manipulação de eventos e cálculos de IMC.
 
-##Voce pode acessar clicando no link abaixo
+## Voce pode acessar clicando no link abaixo
 https://melodic-clafoutis-864752.netlify.app/
 
 ## Como Usar
@@ -25,7 +25,7 @@ https://melodic-clafoutis-864752.netlify.app/
 1. Clone este repositório para o seu ambiente local usando o seguinte comando:
 
    ```
-   git clone https://github.com/seu-usuario/calculadora-imc.git
+   git clone https://github.com/aureliodeboa/calculadora-IMC.git 
    ```
 
 2. Abra o arquivo `index.html` em seu navegador web.
