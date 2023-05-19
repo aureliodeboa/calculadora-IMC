@@ -41,23 +41,68 @@ body{
 
 
 
+#borda {
+ 
+   /* background: linear-gradient(to top, transparent, #03e9f4);*/
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    animation: gradiente 5s linear infinite ; 
+    transition: 5s;
+
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+@keyframes gradiente{
+    0%{
+        box-shadow: 0 0 15px #03e9f4;  
+    }
+    25%{
+        box-shadow: 0 0 25px #03e9f4;
+    }
+    50%{
+       
+        box-shadow: 0 0 45px #03e9f4;    
+    }
+  
+   70%{
+         box-shadow: 0 0 70px #03e9f4;  
+         
+    }
+    
+   80%{
+      box-shadow: 0 0 25px #03e9f4;  
+    
+   }
+
+   90%{
+    box-shadow: 0 0 15px #03e9f4;  
+}
+}
+
+/* muito trabalho pra eu apagar kakakka
+
 
 #borda{
     position: relative;
-    
+    overflow: hidden;
+    padding-left: 2px;
+    margin-left: 2px;
+
    
 }
 
 #borda span:first-child{
 position: absolute;
-
 top:0;
 left: 0;
 width: 100%;
 height: 1px;
-background: linear-gradient(90deg, transparent, #03e9f4);
-animation: animate1 1s infinite;
-animation-delay: .25s;
+background: linear-gradient(to right, transparent, #03e9f4);
+animation: animate1 .25s  linear infinite;
+
+
 }
 
 @keyframes animate1{
@@ -68,16 +113,15 @@ animation-delay: .25s;
         left: 100%;
     }
 }
-#borda span:nth-child(2){
+#borda span:nth-child(2){    
     position: absolute;
-    
     top:0;
-    left: 0;
+    left: 100%;
     width: 1px;
     height: 100%;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    animation: animate2 1s infinite;
-    animation-delay: .25s;
+    background: linear-gradient(to bottom, transparent, #03e9f4);
+    animation: animate2 .25s infinite;
+    animation-delay: .25;
     }
     
     @keyframes animate2{
@@ -88,8 +132,48 @@ animation-delay: .25s;
             top: 100%;
         }
     }
+    
+#borda span:nth-of-type(3){
 
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #03e9f4);
+    animation: animate3 .25s infinite;
+    animation-delay: .50s;
+}
+@keyframes animate3{
+    0%{
+        left:  100%;
+    }
+    100%{
+        left : -100%;
+    }
+} 
 
+ #borda span:nth-of-type(4){
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(to top, transparent, #03e9f4);
+    animation: animate4 .25s infinite;
+    animation-delay: .75s;
+    
+} 
+@keyframes animate4{
+    0%{
+        top:  100%;
+    }
+    100%{
+        top : -100%;
+    }
+}
+
+*/
 #form{
     display: flex;
     flex-direction:  column;
