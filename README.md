@@ -17,7 +17,7 @@ Este é um projeto de Front-end para uma calculadora de Índice de Massa Corpora
 - CSS3: Folhas de estilo para a aparência visual e layout.
 - JavaScript: Linguagem de programação para manipulação de eventos e cálculos de IMC.
 
-## Voce pode acessar clicando no link abaixo
+## Acesse a  Caculadora 
 https://melodic-clafoutis-864752.netlify.app/
 
 ## Como Usar
